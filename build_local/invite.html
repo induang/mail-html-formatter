@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html style="font-family: 'Hiragino Sans', 'PingFang SC', 'sans-serif'; box-sizing: border-box;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Your custom CSS resets for email */
+/*
+ * Here is where you can add your global email CSS resets.
+ *
+ * We use a custom, email-specific CSS reset, instead
+ * of Tailwind's web-optimized `base` layer.
+ *
+ * Styles defined here will be inlined.
+*/
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    line-height: 1;
+}
+*, ::before, ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+    --tw-contain-size:  ;
+    --tw-contain-layout:  ;
+    --tw-contain-paint:  ;
+    --tw-contain-style:  ;
+}
+.container {
+    width: 100%;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px !important;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px !important;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px !important;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px !important;
+    }
+}
+.visible {
+    visibility: visible;
+}
+.static {
+    position: static;
+}
+.absolute {
+    position: absolute;
+}
+.m-0 {
+    margin: 0;
+}
+.mx-2 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.mb-1 {
+    margin-bottom: 4px;
+}
+.mb-10 {
+    margin-bottom: 40px;
+}
+.mb-18 {
+    margin-bottom: 72px;
+}
+.mb-5 {
+    margin-bottom: 20px;
+}
+.mt-10 {
+    margin-top: 40px;
+}
+.mt-11 {
+    margin-top: 44px;
+}
+.mt-24 {
+    margin-top: 96px;
+}
+.mt-4 {
+    margin-top: 16px;
+}
+.mt-6 {
+    margin-top: 24px;
+}
+.mt-\[135px\] {
+    margin-top: 135px;
+}
+.mt-\[137px\] {
+    margin-top: 137px;
+}
+.mt-\[18px\] {
+    margin-top: 18px;
+}
+.mt-\[25px\] {
+    margin-top: 25px;
+}
+.mt-\[26px\] {
+    margin-top: 26px;
+}
+.mt-\[68px\] {
+    margin-top: 68px;
+}
+.mt-\[94px\] {
+    margin-top: 94px;
+}
+.mt-\[97px\] {
+    margin-top: 97px;
+}
+.inline-block {
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+.h-max {
+    height: max-content;
+}
+.w-\[311px\] {
+    width: 311px;
+}
+.w-\[70px\] {
+    width: 70px;
+}
+.w-full {
+    width: 100%;
+}
+.rounded {
+    border-radius: 4px;
+}
+.rounded-md {
+    border-radius: 6px;
+}
+.bg-\[\#f9f9f9\] {
+    background-color: #f9f9f9;
+}
+.bg-indigo-700 {
+    background-color: #4338ca;
+}
+.bg-slate-300 {
+    background-color: #cbd5e1;
+}
+.p-0 {
+    padding: 0;
+}
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.px-6 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.py-3\.5 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.pb-\[10px\] {
+    padding-bottom: 10px;
+}
+.pt-5 {
+    padding-top: 20px;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.indent-8 {
+    text-indent: 32px;
+}
+.text-base {
+    font-size: 16px;
+}
+.text-lg {
+    font-size: 18px;
+}
+.text-sm {
+    font-size: 14px;
+}
+.text-xs {
+    font-size: 12px;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-normal {
+    font-weight: 400;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.leading-none {
+    line-height: 1;
+}
+.text-\[\#0074C8\] {
+    color: #0074C8;
+}
+.text-\[\#00AFCC\] {
+    color: #00AFCC;
+}
+.text-\[\#303333\] {
+    color: #303333;
+}
+.text-\[\#909899\] {
+    color: #909899;
+}
+.text-\[\#999\] {
+    color: #999;
+}
+.text-\[\#F51E1E\] {
+    color: #F51E1E;
+}
+.text-slate-50 {
+    color: #f8fafc;
+}
+.underline {
+    text-decoration-line: underline;
+}
+.mso-font-width-\[150\%\] {
+    mso-font-width: 150%;
+}
+html {
+    font-family: "Hiragino Sans", "PingFang SC", "sans-serif";
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    background-color: #f2f7f7;
+  }
+p {
+    margin: 0;
+  }
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+b {
+    font-size: 14px;
+    font-weight: 600;
+}
+.pabbit-logo {
+    height: 1.625rem;
+  }
+.pabbit-mail-container {
+    margin: 16px;
+    min-height: 378px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 12px;
+}
+.pabbit-mail-header {
+    padding: 16px;
+}
+@media (min-width: 768px) {
+    .pabbit-mail-header {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+}
+.pabbit-mail-header {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.06);
+  }
+.pabbit-mail-footer {
+    padding: 12px;
+    padding-top: 16px;
+    font-size: 12px;
+    color: #999;
+}
+.pabbit-mail-main {
+    max-width: 37.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+}
+.pabbit-caption {
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #999;
+}
+.pabbit-warning {
+    font-size: 12px;
+    color: #909899;
+}
+.verify-code {
+    color: black;
+    font-family: "PingFang SC";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 12.8px;
+  }
+#property_list {
+    padding: 0;
+}
+#property_list > li {
+    list-style-type: none;
+    line-height: 28px;
+}
+#property_name,
+  #visiting_time,
+  #periodic-day,
+  #periodic-time,
+  #periodic,
+  #comment {
+    font-weight: 500 !important;
+}
+.\[-webkit-font-smoothing\:antialiased\] {
+    -webkit-font-smoothing: antialiased;
+}
+.\[text-decoration\:none\] {
+    text-decoration: none;
+}
+.\[word-break\:break-word\] {
+    word-break: break-word;
+}
+/*
+ * Here is where you can define your custom utility classes.
+ *
+ * We wrap them in the `utilities` @layer directive, so
+ * that Tailwind moves them to the correct location.
+ *
+ * More info:
+ * https://tailwindcss.com/docs/functions-and-directives#layer
+*/
+@media (min-width: 768px) {
+    .md\:mt-11 {
+        margin-top: 44px !important;
+    }
+    .md\:mt-9 {
+        margin-top: 36px !important;
+    }
+    .md\:mt-\[110px\] {
+        margin-top: 110px !important;
+    }
+    .md\:mt-\[168px\] {
+        margin-top: 168px !important;
+    }
+    .md\:mt-\[224px\] {
+        margin-top: 224px !important;
+    }
+    .md\:mt-\[57px\] {
+        margin-top: 57px !important;
+    }
+    .md\:mt-\[64px\] {
+        margin-top: 64px !important;
+    }
+    .md\:block {
+        display: block !important;
+    }
+    .md\:hidden {
+        display: none !important;
+    }
+    .md\:pb-\[60px\] {
+        padding-bottom: 60px !important;
+    }
+    .md\:pt-4 {
+        padding-top: 16px !important;
+    }
+    .md\:text-left {
+        text-align: left !important;
+    }
+    .md\:text-lg {
+        font-size: 18px !important;
+    }
+    .md\:text-sm {
+        font-size: 14px !important;
+    }
+    .md\:text-xl {
+        font-size: 20px !important;
+    }
+    .md\:font-normal {
+        font-weight: 400 !important;
+    }
+    .md\:text-\[unset\] {
+        color: unset !important;
+    }
+}
+
+    </style>
+  </head>
+  <body style="margin: 0; background-color: #f2f7f7;">
+    <div class="pabbit-mail-container" style="margin: 16px; min-height: 378px; border-radius: 4px; background-color: #fff; font-size: 12px;">
+      <div class="pabbit-mail-header" style="padding: 16px; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.06);">
+        <img src="https://static.pacport.com/jp/image/pabbit_logo_h5.png?20230626094500" alt="logo" class="pabbit-logo" style="max-width: 100%; vertical-align: middle; line-height: 1; height: 1.625rem;">
+      </div>
+      <div class="pabbit-mail-main" style="max-width: 37.5rem; padding-left: 16px; padding-right: 16px; padding-top: 14px; padding-bottom: 14px; font-size: 14px;">
+        <p class="hidden text-lg font-normal md:block mt-11" style="margin: 0; margin-top: 44px; display: none; font-size: 18px; font-weight: 400;">
+          Pabbit利用者として招待されています。
+        </p>
+        <p class="mt-6 text-base font-semibold text-center md:hidden" style="margin: 0; margin-top: 24px; text-align: center; font-size: 16px; font-weight: 600;">
+          Pabbit利用者として招待されています
+        </p>
+        <p class="text-center md:text-left mt-[97px] md:mt-[57px]" style="margin: 0; margin-top: 97px; text-align: center;">
+          <span class="text-[#909899] text-xs md:text-[unset] md:text-lg" style="font-size: 12px; color: #909899;">ログイン用URLはこちら：</span>
+          <br class="visible md:hidden" style="visibility: visible;">
+          <a id="url" class="text-[#0074C8] underline" href="https://desk.pabbit.cloud/" style="color: #0074C8; text-decoration-line: underline;">https://desk.pabbit.cloud/</a>
+        </p>
+        <p class="pabbit-caption md:mt-[168px] mt-[135px] mb-5" style="margin: 0; margin-top: 135px; margin-bottom: 8px; font-size: 12px; color: #999;">
+          本メールの送信アドレスは送信専用となっております。
+        </p>
+      </div>
+      <hr style="margin: 0; border: 0; border-top: 1px solid #e5e5e5; margin-left: 4px; margin-right: 4px;">
+      <div class="pabbit-mail-footer" style="padding: 12px; padding-top: 16px; font-size: 12px; color: #999;">
+        <p style="margin: 0;">株式会社PacPort</p>
+        <p style="margin: 0;">https://pacport.co.jp</p>
+      </div>
+    </div>
+  </body>
+</html>

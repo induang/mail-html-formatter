@@ -46,7 +46,7 @@
   }
 
   .pabbit-mail-container {
-    @apply min-h-[378px] max-w-[37.5rem] m-4 bg-white rounded;
+    @apply min-h-[378px]  m-4 bg-white rounded;
     @apply text-xs;
   }
 
@@ -59,7 +59,7 @@
   }
 
   .pabbit-mail-main {
-    @apply px-4 py-3.5 text-sm;
+    @apply px-4 py-3.5 text-sm max-w-[37.5rem];
   }
 
   .pabbit-caption {
