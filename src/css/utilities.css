@@ -1,0 +1,98 @@
+/*
+ * Here is where you can define your custom utility classes.
+ *
+ * We wrap them in the `utilities` @layer directive, so
+ * that Tailwind moves them to the correct location.
+ *
+ * More info:
+ * https://tailwindcss.com/docs/functions-and-directives#layer
+*/
+
+@layer utilities {
+  html {
+    font-family: "Hiragino Sans", "PingFang SC", "sans-serif";
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: #f2f7f7;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    @apply mx-1;
+  }
+
+  b {
+    @apply font-semibold text-sm;
+  }
+
+  .break-word {
+    word-break: break-word;
+  }
+
+  .header-shadow {
+  }
+
+  .pabbit-logo {
+    height: 1.625rem;
+  }
+
+  .pabbit-mail-container {
+    @apply min-h-[378px] max-w-[37.5rem] m-4 bg-white rounded;
+    @apply text-xs;
+  }
+
+  .pabbit-mail-header {
+    @apply p-4 md:py-2;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.06);
+  }
+  .pabbit-mail-footer {
+    @apply p-3 pt-4 text-[#999] text-xs;
+  }
+
+  .pabbit-mail-main {
+    @apply px-4 py-3.5 text-sm;
+  }
+
+  .pabbit-caption {
+    @apply text-[#999] text-xs mb-2;
+  }
+
+  .pabbit-warning {
+    @apply text-[#909899] text-xs;
+  }
+
+  .verify-code {
+    color: black;
+    font-family: "PingFang SC";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 12.8px;
+  }
+
+  #property_list {
+    @apply p-0;
+  }
+
+  #property_list > li {
+    @apply list-none leading-7;
+  }
+  #property_name,
+  #visiting_time,
+  #periodic-day,
+  #periodic-time,
+  #periodic,
+  #comment {
+    @apply font-medium !important;
+  }
+}

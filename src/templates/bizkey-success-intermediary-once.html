@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      {{{page.css}}}
+    </style>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="pabbit-mail-container">
+      <!-- header -->
+      <div class="pabbit-mail-header">
+        <img
+          src="https://static.pacport.com/jp/image/pabbit_logo_h5.png?20230626094500"
+          alt="logo"
+          class="pabbit-logo"
+        />
+      </div>
+      <!-- main -->
+      <div class="pabbit-mail-main">
+        <p>
+          <b
+            >ご提出いただいた入館申請は承認されました。以下の詳細をご確認をお願い致します。</b
+          >
+        </p>
+
+        <ul id="property_list" class="mt-10 mb-18">
+          <li>
+            <span class="w-[70px] inline-block">物件名：</span
+            ><b id="property_name">物件AA</b>
+          </li>
+
+          <li>
+            <span class="w-[70px] inline-block">入館日時：</span
+            ><b id="visiting_time">2024年02月06日 14:00 - 15:00</b>
+          </li>
+          <li>
+            <span class="w-[70px] inline-block"></span
+            ><b id="periodic">一回限り</b>
+          </li>
+
+          <li>
+            <span class="w-[70px] inline-block">コメント：</span
+            ><b id="comment">カギ箱のパスワードは1467です。</b>
+          </li>
+        </ul>
+        <p>
+          入館の際にはBizKey申請ページにログインして解錠コードを取得できます。
+        </p>
+        <p class="underline">Pabbit BizKey</p>
+        <p class="pabbit-warning mt-4 mb-10">
+          <span class="text-[#F51E1E]">*</span>
+          許可以外の時間に、ワンタイムパスワードを取得できません。
+        </p>
+        <p class="pabbit-caption">
+          本メールの送信アドレスは送信専用となっております。
+        </p>
+      </div>
+      <hr />
+      <!-- footer -->
+      <div class="pabbit-mail-footer">
+        <p>株式会社PacPort</p>
+        <p>https://pacport.co.jp</p>
+      </div>
+    </div>
+  </body>
+</html>

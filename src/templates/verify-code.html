@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      {{{page.css}}}
+    </style>
+  </head>
+  <body>
+    <div class="pabbit-mail-container">
+      <div class="pabbit-mail-header">
+        <img
+          src="https://static.pacport.com/jp/image/pabbit_logo_h5.png?20230626094500"
+          alt="logo"
+          class="pabbit-logo"
+        />
+      </div>
+      <div class="pabbit-mail-main">
+        <p class="text-[#303333] font-normal md:text-xl text-sm md:mt-9">
+          アカウントを確認するために、次のコードを入力してログインしてください。
+        </p>
+        <p></p>
+        <div
+          class="mt-[25px] pt-5 md:pt-4 pb-[10px] rounded-md w-[311px] h-max text-center bg-[#f9f9f9]"
+        >
+          <p class="text-base">確認コード：</p>
+          <div id="access_code" class="my-3 mx-auto">
+            <div class="verify-code">542888</div>
+          </div>
+          <p class="mt-6 mx-2 text-xs text-right text-[#909899]">
+            有効期限：<span id="expire_time">5分間</span>
+          </p>
+        </div>
+        <p class="text-xs mt-4 md:text-sm text-[#909899]">
+          <span class="text-[#F51E1E]">*</span>
+          確認コードを要求していない場合は、このメールを無視して削除しても構いません。
+        </p>
+        <p class="pabbit-caption mt-[137px] md:mt-[110px] mb-1">
+          本メールの送信アドレスは送信専用となっております。
+        </p>
+      </div>
+      <hr />
+      <div class="pabbit-mail-footer md:pb-[60px]">
+        <p>株式会社PacPort</p>
+        <p>https://pacport.co.jp</p>
+      </div>
+    </div>
+  </body>
+</html>
